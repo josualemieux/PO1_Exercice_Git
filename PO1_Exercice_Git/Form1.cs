@@ -6,5 +6,15 @@ namespace PO1_Exercice_Git
         {
             InitializeComponent();
         }
+
+        private void button_Somme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_TestPremier_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
