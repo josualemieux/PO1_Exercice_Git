@@ -51,6 +51,7 @@
             button_PlusGrand.TabIndex = 1;
             button_PlusGrand.Text = "Trouver le plus grand";
             button_PlusGrand.UseVisualStyleBackColor = true;
+            button_PlusGrand.Click += button_PlusGrand_Click;
             // 
             // button_TestPremier
             // 

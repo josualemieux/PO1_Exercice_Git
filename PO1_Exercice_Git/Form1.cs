@@ -11,12 +11,29 @@ namespace PO1_Exercice_Git
 
         private void button_Somme_Click(object sender, EventArgs e)
         {
-
+            int somme = 0;
+            for (int i = 0; i < tableau.Length; i++)
+            {
+                somme += tableau[i];
+            }
+            MessageBox.Show("La somme des éléments du tableau est : " + somme);
         }
 
         private void button_TestPremier_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_PlusGrand_Click(object sender, EventArgs e)
+        {
+            int somme = 0;
+            for (int i = 0; i <= tableau.Length; i++)
+            {
+                if (tableau[i] > somme)
+                {
+                    somme = tableau[i];
+                }
+            }
         }
     }
 }
