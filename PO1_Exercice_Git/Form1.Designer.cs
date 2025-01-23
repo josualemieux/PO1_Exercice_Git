@@ -31,6 +31,7 @@
             button_Somme = new Button();
             button_PlusGrand = new Button();
             button_TestPremier = new Button();
+            textBox_Nombre = new TextBox();
             SuspendLayout();
             // 
             // button_Somme
@@ -63,17 +64,26 @@
             button_TestPremier.UseVisualStyleBackColor = true;
             button_TestPremier.Click += button_TestPremier_Click;
             // 
+            // textBox_Nombre
+            // 
+            textBox_Nombre.Location = new Point(188, 84);
+            textBox_Nombre.Name = "textBox_Nombre";
+            textBox_Nombre.Size = new Size(125, 27);
+            textBox_Nombre.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(291, 146);
+            ClientSize = new Size(384, 155);
+            Controls.Add(textBox_Nombre);
             Controls.Add(button_TestPremier);
             Controls.Add(button_PlusGrand);
             Controls.Add(button_Somme);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -81,5 +91,6 @@
         private Button button_Somme;
         private Button button_PlusGrand;
         private Button button_TestPremier;
+        private TextBox textBox_Nombre;
     }
 }

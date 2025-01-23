@@ -16,12 +16,55 @@ namespace PO1_Exercice_Git
             {
                 somme += tableau[i];
             }
-            MessageBox.Show("La somme des éléments du tableau est : " + somme);
+            MessageBox.Show("La somme des ï¿½lï¿½ments du tableau est : " + somme);
         }
 
         private void button_TestPremier_Click(object sender, EventArgs e)
         {
 
+            if(int.TryParse(textBox_Nombre.Text, out int nombre))
+            {
+                if (nombre < 2)
+                {
+                    MessageBox.Show("Le nombre doit ï¿½tre supï¿½rieur ou ï¿½gal ï¿½ 2");
+                }
+                else
+                {
+                    bool estPremier = true;
+                    for (int i = 2; i < nombre; i++)
+                    {
+                        if (nombre % i == 0)
+                        {
+                            estPremier = false;
+                            break;
+                        }
+                    }
+                    if (estPremier)
+                    {
+                        MessageBox.Show("Le nombre est premier");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Le nombre n'est pas premier");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Le nombre doit ï¿½tre un entier");
+            }
+        }
+
+        private void button_PlusGrand_Click(object sender, EventArgs e)
+        {
+            int somme = 0;
+            for (int i = 0; i < tableau.Length; i++)
+            {
+                if (tableau[i] > somme)
+                {
+                    somme = tableau[i];
+                }
+            }
         }
 
         private void button_PlusGrand_Click(object sender, EventArgs e)
